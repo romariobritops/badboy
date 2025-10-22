@@ -15,6 +15,7 @@
       align-items: center;
       text-align: center;
       padding: 60px 20px;
+      overflow-x: hidden;
     }
 
     h1 {
@@ -25,11 +26,13 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       letter-spacing: 2px;
+      animation: fadeInDown 1s ease-out;
     }
 
     .logo {
       width: 160px;
       margin-bottom: 30px;
+      animation: fadeIn 1.2s ease-out;
     }
 
     .quote {
@@ -38,14 +41,16 @@
       max-width: 700px;
       margin-bottom: 30px;
       line-height: 1.4;
+      animation: fadeInUp 1.4s ease-out;
     }
 
     .manifesto {
-      max-width: 600px;
+      max-width: 700px;
       font-size: 1.1em;
       line-height: 1.6;
       color: #ddd;
       margin-bottom: 40px;
+      animation: fadeInUp 1.6s ease-out;
     }
 
     .button-group {
@@ -54,6 +59,7 @@
       flex-wrap: wrap;
       justify-content: center;
       margin-bottom: 40px;
+      animation: fadeInUp 1.8s ease-out;
     }
 
     .cta-button {
@@ -78,6 +84,22 @@
       font-family: monospace;
       font-size: 0.9em;
       color: #888;
+      animation: fadeIn 2s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -92,8 +114,20 @@
 
   <div class="manifesto">
     The Bad Boy Coin spirit is quiet and relentless.<br />
-    We rise together. We fall together.<br />
-    And we build, every time.
+    Today, it’s just one person. Tomorrow, it will be many.<br /><br />
+    We rise together. We fall together. And we build, every time.<br /><br />
+    This isn’t about hype. It’s about patience.<br />
+    It’s about showing up when no one’s watching.<br />
+    It’s about believing in the long game — even when the world wants shortcuts.<br /><br />
+    Bad Boy Coin is here to remind you:<br />
+    You’re stronger than you think.<br />
+    You’re not alone.<br />
+    And your story is just beginning.<br /><br />
+    We’re not just a token.<br />
+    We’re a message.<br />
+    A spark.<br />
+    A movement built on motivation, resilience, and attitude.<br /><br />
+    If you feel it — you’re already Bad Boy.
   </div>
 
   <div class="button-group">
