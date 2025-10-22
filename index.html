@@ -1,212 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bad Boy Coin</title>
+  <title>Bad Boy Coin - Landing Page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #000000, #0a0a0f);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 60px 20px;
-      overflow-x: hidden;
-      position: relative;
-    }
 
-    body::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 1000px;
-      height: 1000px;
-      background: url('assets/badboy-background.png') no-repeat center center;
-      background-size: contain;
-      opacity: 0.05;
-      z-index: 0;
-    }
-
-    h1 {
-      font-size: 4em;
-      font-weight: bold;
-      margin-bottom: 20px;
-      background: linear-gradient(to right, #00ff9f, #00bfff, #a020f0);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      letter-spacing: 2px;
-      animation: fadeInDown 1s ease-out;
-      z-index: 1;
-    }
-
-    .quote, .manifesto, .tagline, .button-group, .contract-box, .copy-button {
-      z-index: 1;
-    }
-
-    .quote {
-      font-size: 2em;
-      font-weight: bold;
-      max-width: 700px;
-      margin-bottom: 30px;
-      line-height: 1.4;
-      animation: fadeInUp 1.4s ease-out;
-    }
-
-    .manifesto {
-      max-width: 700px;
-      font-size: 1.1em;
-      line-height: 1.6;
-      color: #ddd;
-      margin-bottom: 40px;
-      animation: fadeInUp 1.6s ease-out;
-    }
-
-    .tagline {
-      font-size: 2.2em;
-      font-weight: bold;
-      margin-top: 40px;
-      animation: pulseIn 2.2s ease-out;
-      background: linear-gradient(to right, #00ff9f, #00bfff, #a020f0);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      letter-spacing: 1px;
-    }
-
-    .button-group {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 40px 0;
-      animation: fadeInUp 1.8s ease-out;
-    }
-
-    .cta-button {
-      background: linear-gradient(to right, #a020f0, #00bfff);
-      color: white;
-      padding: 15px;
-      font-size: 1.4em;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      transition: transform 0.2s ease;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 60px;
-      height: 60px;
-    }
-
-    .cta-button:hover {
-      transform: scale(1.1);
-    }
-
-    .contract-box {
-      font-family: monospace;
-      font-size: 0.95em;
-      color: #eee;
-      border: 1px solid #444;
-      padding: 12px 20px;
-      border-radius: 8px;
-      background-color: #111;
-      max-width: 90%;
-      word-break: break-all;
-      animation: fadeIn 2s ease-out;
-      margin-bottom: 20px;
-    }
-
-    .copy-button {
-      background: linear-gradient(to right, #00bfff, #a020f0);
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 6px;
-      font-weight: bold;
-      cursor: pointer;
-      animation: fadeIn 2.2s ease-out;
-    }
-
-    .copy-button:hover {
-      transform: scale(1.05);
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(40px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-40px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes pulseIn {
-      0% { opacity: 0; transform: scale(0.9); }
-      60% { opacity: 1; transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-  </style>
+  <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
+
 <body>
-  <h1>BAD BOY COIN</h1>
 
-  <div class="quote">
-    Start small. Think big. Stay relentless.
-  </div>
+  <div class="page-wrapper">
 
-  <div class="manifesto">
-    The Bad Boy Coin spirit is quiet and relentless.<br />
-    Today, it’s just one person. Tomorrow, it will be many.<br /><br />
-    We rise together. We fall together. And we build, every time.<br /><br />
-    This isn’t about hype. It’s about patience.<br />
-    It’s about showing up when no one’s watching.<br />
-    It’s about believing in the long game — even when the world wants shortcuts.<br /><br />
-    Bad Boy Coin is here to remind you:<br />
-    You’re stronger than you think.<br />
-    You’re not alone.<br />
-    And your story is just beginning.<br /><br />
-    We’re not just a token.<br />
-    We’re a message.<br />
-    A spark.<br />
-    A movement built on motivation, resilience, and attitude.
-  </div>
+    <header class="hero-section">
+      <img src="assets/img/bg.png" alt="Bad Boy Coin Logo" class="hero-logo">
+      
+      <h1>BAD BOY COIN</h1>
+      
+      <p class="quote">Start small. Think big. Stay relentless.</p>
+      
+      <nav class="social-links">
+        <a href="https://t.me/badboycoin" target="_blank" class="cta-button" aria-label="Telegram">
+          <i class="fab fa-telegram"></i>
+        </a>
+        <a href="https://x.com/badboy_coin" target="_blank" class="cta-button" aria-label="X (Twitter)">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+      </nav>
+    </header>
 
-  <div class="tagline">
-    If you feel it — you’re already Bad Boy.
-  </div>
+    <main>
+      <section id="manifesto" class="content-section">
+        <h2>THE BAD BOY SPIRIT</h2>
+        <div class="manifesto-text">
+          <p>
+            The Bad Boy Coin spirit is quiet and relentless.<br />
+            Today, it’s just one person. Tomorrow, it will be many.<br /><br />
+            We rise together. We fall together. And we build, every time.<br /><br />
+            This isn’t about hype. It’s about patience.<br />
+            It’s about showing up when no one’s watching.<br />
+            It’s about believing in the long game — even when the world wants shortcuts.<br /><br />
+            Bad Boy Coin is here to remind you:<br />
+            You’re stronger than you think.<br />
+            You’re not alone.<br />
+            And your story is just beginning.<br /><br />
+            We’re not just a token.<br />
+            We’re a message.<br />
+            A spark.<br />
+            A movement built on motivation, resilience, and attitude.
+          </p>
+        </div>
+      </section>
 
-  <div class="button-group">
-    <a href="https://t.me/badboycoin" target="_blank" class="cta-button"><i class="fab fa-telegram"></i></a>
-    <a href="https://x.com/badboy_coin" target="_blank" class="cta-button"><i class="fab fa-x-twitter"></i></a>
-  </div>
+      <section id="contract" class="content-section highlight-section">
+        <h2 class="tagline">If you feel it — you’re already Bad Boy.</h2>
+        
+        <div class="contract-box">
+          <strong>Contract Address:</strong><br />
+          <span id="ca">0x1234567890abcdef1234567890abcdef12345678</span>
+        </div>
+        
+        <button class="copy-button" onclick="copyCA()">
+          <i class="fas fa-copy"></i> Copy CA
+        </button>
+      </section>
+    </main>
 
-  <div class="contract-box">
-    <strong>Contract Address:</strong><br />
-    <span id="ca">0x1234567890abcdef1234567890abcdef12345678</span>
-  </div>
+    <footer>
+      <p>&copy; 2025 Bad Boy Coin. Todos os direitos reservados.</p>
+    </footer>
 
-  <button class="copy-button" onclick="copyCA()">Copy CA</button>
+  </div> <script src="assets/js/script.js"></script>
 
-  <script>
-    function copyCA() {
-      const ca = document.getElementById("ca").innerText.trim();
-      navigator.clipboard.writeText(ca).then(() => {
-        alert("Contract address copied to clipboard!");
-      });
-    }
-  </script>
 </body>
 </html>
