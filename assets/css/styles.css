@@ -1,0 +1,255 @@
+/* === RESET E GLOBAIS === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* Fundo escuro moderno */
+  background-color: #05050a;
+  /* Cor de texto base (levemente cinza) */
+  color: #e0e0e0;
+  /* Nova fonte moderna */
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+/* Contêiner principal para centralizar o conteúdo */
+.page-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* === SEÇÃO 1: HERO === */
+.hero-section {
+  text-align: center;
+  padding: 80px 20px 60px 20px;
+  animation: fadeInDown 1s ease-out;
+}
+
+.hero-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+  animation: float 4s ease-in-out infinite;
+  
+  /* ADICIONE ESTA LINHA AQUI */
+  mix-blend-mode: screen;
+}
+
+.hero-section h1 {
+  font-size: 4.5em;
+  font-weight: 900;
+  background: linear-gradient(to right, #00ff9f, #00bfff, #a020f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.hero-section .quote {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+.social-links {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.cta-button {
+  background: linear-gradient(to right, #a020f0, #00bfff);
+  color: white;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.cta-button:hover {
+  transform: scale(1.1) rotate(10deg);
+  box-shadow: 0 0 25px rgba(0, 191, 255, 0.7);
+}
+
+
+/* === SEÇÕES DE CONTEÚDO === */
+.content-section {
+  /* Estilo "card" moderno */
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.content-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  /* Linha gradiente abaixo do título */
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to right, #a020f0, #00bfff) 1;
+}
+
+.manifesto-text p {
+  font-size: 1.1em;
+  color: #ccc;
+  max-width: 700px;
+  margin: 0 auto; /* Centraliza o texto */
+}
+
+/* === SEÇÃO 3: CONTRATO (Highlight) === */
+.highlight-section {
+  /* Fundo com gradiente sutil para destacar */
+  background: linear-gradient(145deg, #100a1f, #0a141f);
+  border-color: #402060;
+  text-align: center;
+}
+
+.highlight-section .tagline {
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 30px;
+  background: linear-gradient(to right, #00ff9f, #00bfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: none;
+}
+
+.contract-box {
+  font-family: monospace;
+  font-size: 1.1em;
+  color: #eee;
+  border: 1px solid #444;
+  padding: 15px 25px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.3);
+  max-width: 95%;
+  word-break: break-all;
+  display: inline-block; /* Para se ajustar ao conteúdo */
+  margin-bottom: 25px;
+}
+
+.copy-button {
+  /* Estilo "Pill button" moderno */
+  background: linear-gradient(to right, #00bfff, #a020f0);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 50px; /* Pílula */
+  font-weight: bold;
+  font-size: 1.1em;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.copy-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(160, 32, 240, 0.6);
+}
+
+.copy-button:disabled {
+  background: #00a000;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+/* === RODAPÉ === */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+
+/* === ANIMAÇÕES === */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === RESPONSIVIDADE (Mobile) === */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 3em;
+  }
+  
+  .hero-logo {
+    width: 120px;
+  }
+
+  .hero-section .quote {
+    font-size: 1.2em;
+  }
+
+  .content-section {
+    padding: 30px 20px;
+  }
+
+  .content-section h2 {
+    font-size: 2em;
+  }
+
+  .highlight-section .tagline {
+    font-size: 1.8em;
+  }
+
+  .contract-box {
+    font-size: 0.85em;
+    padding: 12px 15px;
+  }
+
+  .copy-button {
+    padding: 12px 30px;
+    font-size: 1em;
+  }
+}
