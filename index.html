@@ -53,12 +53,23 @@
       animation: fadeInUp 1.6s ease-out;
     }
 
+    .tagline {
+      font-size: 2.2em;
+      font-weight: bold;
+      margin-top: 40px;
+      animation: pulseIn 2.2s ease-out;
+      background: linear-gradient(to right, #00ff9f, #00bfff, #a020f0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 1px;
+    }
+
     .button-group {
       display: flex;
       gap: 20px;
       flex-wrap: wrap;
       justify-content: center;
-      margin-bottom: 40px;
+      margin: 40px 0;
       animation: fadeInUp 1.8s ease-out;
     }
 
@@ -80,10 +91,16 @@
       transform: scale(1.05);
     }
 
-    .contract {
+    .contract-box {
       font-family: monospace;
-      font-size: 0.9em;
-      color: #888;
+      font-size: 0.95em;
+      color: #eee;
+      border: 1px solid #444;
+      padding: 12px 20px;
+      border-radius: 8px;
+      background-color: #111;
+      max-width: 90%;
+      word-break: break-all;
       animation: fadeIn 2s ease-out;
     }
 
@@ -100,6 +117,12 @@
     @keyframes fadeInDown {
       from { opacity: 0; transform: translateY(-40px); }
       to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulseIn {
+      0% { opacity: 0; transform: scale(0.9); }
+      60% { opacity: 1; transform: scale(1.05); }
+      100% { transform: scale(1); }
     }
   </style>
 </head>
@@ -126,7 +149,10 @@
     We’re not just a token.<br />
     We’re a message.<br />
     A spark.<br />
-    A movement built on motivation, resilience, and attitude.<br /><br />
+    A movement built on motivation, resilience, and attitude.
+  </div>
+
+  <div class="tagline">
     If you feel it — you’re already Bad Boy.
   </div>
 
@@ -135,8 +161,9 @@
     <a href="https://x.com/badboycoin" target="_blank" class="cta-button">Follow on X</a>
   </div>
 
-  <div class="contract">
-    Contract: 1234...1234
+  <div class="contract-box">
+    <strong>Contract Address:</strong><br />
+    0x1234567890abcdef1234567890abcdef12345678
   </div>
 </body>
 </html>
