@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bad Boy Coin</title>
+  <title>Bad Boy Mindset</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: radial-gradient(circle at top left, #00ff9f10, #00bfff10, #a020f010), #000;
+      background: linear-gradient(to bottom, #000000, #0a0a0f);
       color: white;
       display: flex;
       flex-direction: column;
@@ -17,65 +17,37 @@
       padding: 60px 20px;
     }
 
-    img.logo {
-      <img src="assets/logo.svg" alt="Bad Boy Coin Logo" width="120" style="margin-bottom: 30px;" />
-    }
-
     h1 {
-      font-size: 3.5em;
-      background: linear-gradient(to right, #00ff9f, #00bfff, #a020f0);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 10px;
+      font-size: 2em;
+      letter-spacing: 2px;
+      color: #ccc;
+      margin-bottom: 20px;
     }
 
-    .tagline {
-      font-size: 1.2em;
-      color: #ccc;
-      margin-bottom: 40px;
+    .logo {
+      width: 160px;
+      margin-bottom: 30px;
+    }
+
+    .quote {
+      font-size: 2em;
+      font-weight: bold;
+      max-width: 700px;
+      margin-bottom: 30px;
+      line-height: 1.4;
     }
 
     .manifesto {
-      max-width: 700px;
+      max-width: 600px;
       font-size: 1.1em;
-      line-height: 1.7;
+      line-height: 1.6;
+      color: #ddd;
       margin-bottom: 40px;
-    }
-
-    .spirit-section {
-      max-width: 700px;
-      margin: 60px auto;
-      font-size: 1.2em;
-      line-height: 1.8;
-      color: #eee;
-      text-align: center;
-      animation: fadeIn 1.5s ease-in;
-    }
-
-    .spirit-section h2 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-      background: linear-gradient(to right, #00ff9f, #00bfff, #a020f0);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .highlight {
-      font-weight: bold;
-      color: #00bfff;
-      background: linear-gradient(to right, #00ff9f, #a020f0);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
     }
 
     .cta-button {
       background: linear-gradient(to right, #a020f0, #00bfff);
-      color: black;
+      color: white;
       padding: 15px 40px;
       font-size: 1em;
       font-weight: bold;
@@ -83,81 +55,41 @@
       border-radius: 8px;
       cursor: pointer;
       transition: transform 0.2s ease;
-      margin-top: 20px;
+      margin-bottom: 40px;
     }
 
     .cta-button:hover {
       transform: scale(1.05);
     }
 
-    .social-buttons {
-      margin-top: 50px;
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .btn-social {
-      background: linear-gradient(to right, #00bfff, #a020f0);
-      color: white;
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: transform 0.2s ease;
-    }
-
-    .btn-social:hover {
-      transform: scale(1.05);
-      background: linear-gradient(to right, #00ff9f, #00bfff);
-    }
-
     .contract {
-      margin-top: 30px;
       font-family: monospace;
       font-size: 0.9em;
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 10px 20px;
-      border-radius: 6px;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <img src="assets/logo.svg" alt="Bad Boy Coin Logo" class="logo" />
+  <h1>BAD BOY MINDSET</h1>
 
-  <h1>BAD BOY COIN</h1>
-  <p class="tagline">A memecoin that blends attitude, brotherhood, and purpose.</p>
+  <img src="assets/badboy-logo.svg" alt="Bad Boy Logo" class="logo" />
+
+  <div class="quote">
+    Resilience isn’t loud. It’s consistent.
+  </div>
 
   <div class="manifesto">
-    🤝 <strong>Bad Boy Coin is more than a token — it’s a brotherhood.</strong><br />
-    United by purpose, driven by courage, and fueled by the will to win together.<br />
-    Every challenge is a chance to grow. Every setback, part of the journey. Every victory, a shared celebration.<br /><br />
-    💪 <strong>Consistency is our strength. Resilience is our engine.</strong><br />
-    No matter the market, the hype, or the doubt — we stand firm, side by side.<br /><br />
-    🌟 <strong>We lift each other up, build together, and never stop moving.</strong><br />
-    If you believe in unity with attitude, in progress with purpose —<br />
-    <strong>you’re already Bad Boy.</strong>
+    The Bad Boy Mindset is quiet and relentless.<br />
+    We rise together. We fall together.<br />
+    And we build, every time.
   </div>
 
-  <section class="spirit-section">
-    <h2>The Spirit of Bad Boy Coin</h2>
-    <p><span class="highlight">We walk together.</span> Every step is powered by trust, friendship, and shared ambition.</p>
-    <p><span class="highlight">Every challenge makes us stronger.</span> Every fall teaches. Every win belongs to all.</p>
-    <p><span class="highlight">We’re built on loyalty and boldness.</span> On showing up, standing tall, and staying true.</p>
-    <p>We’re here for the long haul. For the grind. For the legacy.</p>
-    <p><span class="highlight">If you believe in brotherhood with purpose — welcome to the family.</span></p>
-  </section>
-
-  <button class="cta-button">Join the journey</button>
-
-  <div class="social-buttons">
-    <a href="https://x.com/badboycoin" target="_blank" class="btn-social">🐦 Follow us on X</a>
-    <a href="https://t.me/badboycoin" target="_blank" class="btn-social">💬 Join us on Telegram</a>
-  </div>
+  <button class="cta-button" onclick="window.location.href='https://t.me/badboycoin'">
+    Get Inspired
+  </button>
 
   <div class="contract">
-    CA: 0xBADB0Yc01nF34rL3sBR3eL0000000000000000
+    Contract: 1234...1234
   </div>
 </body>
 </html>
