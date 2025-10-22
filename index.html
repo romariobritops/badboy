@@ -45,17 +45,26 @@
       margin-bottom: 40px;
     }
 
+    .button-group {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
     .cta-button {
       background: linear-gradient(to right, #a020f0, #00bfff);
       color: white;
-      padding: 15px 40px;
+      padding: 15px 30px;
       font-size: 1em;
       font-weight: bold;
       border: none;
       border-radius: 8px;
       cursor: pointer;
       transition: transform 0.2s ease;
-      margin-bottom: 40px;
+      text-decoration: none;
+      display: inline-block;
     }
 
     .cta-button:hover {
@@ -84,9 +93,10 @@
     And we build, every time.
   </div>
 
-  <button class="cta-button" onclick="window.location.href='https://t.me/badboycoin'">
-    Get Inspired
-  </button>
+  <div class="button-group">
+    <a href="https://t.me/badboycoin" target="_blank" class="cta-button">Get Inspired</a>
+    <a href="https://x.com/badboycoin" target="_blank" class="cta-button">Follow on X</a>
+  </div>
 
   <div class="contract">
     Contract: 1234...1234
