@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bad Boy Coin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
       margin: 0;
@@ -16,6 +17,21 @@
       text-align: center;
       padding: 60px 20px;
       overflow-x: hidden;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1000px;
+      height: 1000px;
+      background: url('assets/badboy-background.png') no-repeat center center;
+      background-size: contain;
+      opacity: 0.05;
+      z-index: 0;
     }
 
     h1 {
@@ -27,12 +43,11 @@
       -webkit-text-fill-color: transparent;
       letter-spacing: 2px;
       animation: fadeInDown 1s ease-out;
+      z-index: 1;
     }
 
-    .logo {
-      width: 160px;
-      margin-bottom: 30px;
-      animation: fadeIn 1.2s ease-out;
+    .quote, .manifesto, .tagline, .button-group, .contract-box, .copy-button {
+      z-index: 1;
     }
 
     .quote {
@@ -76,19 +91,22 @@
     .cta-button {
       background: linear-gradient(to right, #a020f0, #00bfff);
       color: white;
-      padding: 15px 30px;
-      font-size: 1em;
-      font-weight: bold;
+      padding: 15px;
+      font-size: 1.4em;
       border: none;
-      border-radius: 8px;
+      border-radius: 50%;
       cursor: pointer;
       transition: transform 0.2s ease;
       text-decoration: none;
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
     }
 
     .cta-button:hover {
-      transform: scale(1.05);
+      transform: scale(1.1);
     }
 
     .contract-box {
@@ -102,6 +120,22 @@
       max-width: 90%;
       word-break: break-all;
       animation: fadeIn 2s ease-out;
+      margin-bottom: 20px;
+    }
+
+    .copy-button {
+      background: linear-gradient(to right, #00bfff, #a020f0);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      animation: fadeIn 2.2s ease-out;
+    }
+
+    .copy-button:hover {
+      transform: scale(1.05);
     }
 
     @keyframes fadeIn {
@@ -129,8 +163,6 @@
 <body>
   <h1>BAD BOY COIN</h1>
 
-  <img src="assets/badboy-logo.svg" alt="Bad Boy Logo" class="logo" />
-
   <div class="quote">
     Resilience isn’t loud. It’s consistent.
   </div>
@@ -157,13 +189,24 @@
   </div>
 
   <div class="button-group">
-    <a href="https://t.me/badboycoin" target="_blank" class="cta-button">Get Inspired</a>
-    <a href="https://x.com/badboycoin" target="_blank" class="cta-button">Follow on X</a>
+    <a href="https://t.me/badboycoin" target="_blank" class="cta-button"><i class="fab fa-telegram"></i></a>
+    <a href="https://x.com/badboycoin" target="_blank" class="cta-button"><i class="fab fa-x-twitter"></i></a>
   </div>
 
   <div class="contract-box">
     <strong>Contract Address:</strong><br />
-    0x1234567890abcdef1234567890abcdef12345678
+    <span id="ca">0x1234567890abcdef1234567890abcdef12345678</span>
   </div>
+
+  <button class="copy-button" onclick="copyCA()">Copy CA</button>
+
+  <script>
+    function copyCA() {
+      const ca = document.getElementById("ca").innerText.trim();
+      navigator.clipboard.writeText(ca).then(() => {
+        alert("Contract address copied to clipboard!");
+      });
+    }
+  </script>
 </body>
 </html>
