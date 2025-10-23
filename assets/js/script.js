@@ -7,7 +7,7 @@ function copyCA() {
 
   navigator.clipboard.writeText(ca).then(() => {
     // Sucesso: Muda o HTML para feedback
-    copyButton.innerHTML = '<i class="fas fa-check"></i> Copiado!';
+    copyButton.innerHTML = '<i class="fas fa-check"></i> Copied!';
     copyButton.disabled = true;
 
     // Reverte após 2 segundos
